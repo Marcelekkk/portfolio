@@ -1,15 +1,16 @@
 body {
   background-color: black;
 }
+
 #home-header {
   overflow: hidden;
   color: aliceblue;
   margin-left: auto;
   margin-right: auto;
-  width: 730px;
+  width: 60%;
   height: 60px;
   padding-top: 10px;
-  border-radius: 8px;
+  border-radius: 30px;
   background: linear-gradient(
     90deg,
     rgba(42, 40, 40, 0.801733193277311) 0%,
@@ -17,24 +18,124 @@ body {
   );
 }
 #home-header a {
+  margin-left: 60px;
+  margin-right: auto;
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 12px 36px;
   text-decoration: none;
   font-size: 22px;
+  margin-bottom: 35px;
 }
-.me-div {
+#home-header a:hover {
+  transition: 400ms;
+  transform: scale(110%);
+  color: rgba(88, 86, 86, 0.712);
+}
+#about_me_blog {
+  font-size: 20px;
+  width: 50%;
+  max-height: 500px;
+  border-radius: 30px;
   background: linear-gradient(
     90deg,
     rgba(42, 40, 40, 0.801733193277311) 0%,
     rgba(65, 66, 66, 1) 92%
   );
-  max-width: 850px;
-}
-.me-div p {
   text-align: center;
-  color: aliceblue;
-  float: left;
-  font-size: 15px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  display: flex;
+}
+hr {
+  background-color: white;
+  height: 4px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#about_me_blog p {
+  text-align: left;
+  margin-right: 50px;
+}
+#about_me_blog img {
+  width: 200px;
+  height: 200px;
+}
+#my_projects_head {
+  text-align: center;
+  color: white;
+}
+/*uiverse themes*/
+/* From Uiverse.io by alexruix */
+.projects {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  width: 290px;
+  height: 354px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-bottom: 70px;
+}
+
+.card img {
+  width: 130px;
+  height: 170px;
+}
+
+.card-details {
+  margin-top: 10px;
+  font-size: 13px;
+  color: black;
+  height: 100%;
+  gap: 0.3em;
+  display: grid;
+  place-content: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #ffffffee;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
 }

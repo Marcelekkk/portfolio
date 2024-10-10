@@ -11,6 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -30,36 +36,63 @@
         ></a>
       </div>
     </header>
-
-    <div class="me-div">
-      <p>
-        My name is Marcel i'm 17yo. Few days ago i started learning programming
-      </p>
-    </div>
-    <div class="projects">
-      <h3>
-        <a href="./public/movie-ranking.html">Movie Ranking Project</a>
-      </h3>
-      <img
-        height="290px"
-        width="250px"
-        src="./assets/images/movie_ranking.png"
-        alt="Movie ranking project"
-      />
-    </div>
-    <br />
-    <div class="projects">
-      <h3>
-        <a href="./public/birthday-invite.html">Birthday Invite Project</a>
-      </h3>
-      <img
-        height="290px"
-        width="250px"
-        src="./assets/images/birthday_invite.png"
-        alt="Birthday invite project"
-      />
-    </div>
     <hr />
+    <main>
+      <div id="about_me_blog">
+        <p>
+          My name is Marcel i'm 17yo. Few days ago i started learning
+          programming Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Iusto tempore totam facilis quas debitis a magni ipsum sint illum
+          quia? Libero sapiente nobis ipsa! Eaque fugiat mollitia sapiente
+          nostrum voluptas?
+        </p>
+        <img src="assets/images/dumbo.jpg" alt="Dumbo" />
+      </div>
+      <hr />
+      <h2 id="my_projects_head">My Projects</h2>
+      <hr>
+      <div class="projects">
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Movie Ranking</p>
+            <p class="text-body">
+              <img
+                src="./assets/images/movie_ranking.png"
+                alt="movie-ranking"
+              />
+            </p>
+          </div>
+          <button class="card-button">
+            <a
+              href="./public/movie-ranking.html"
+              style="text-decoration: none; color: white"
+              >Check it</a
+            >
+          </button>
+        </div>
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Birthday invite</p>
+            <p class="text-body">
+              <img
+                src="assets/images/birthday_invite.png"
+                alt="birthday-invite"
+              />
+            </p>
+          </div>
+          <button class="card-button"><a href="public/birthday-invite.html" style="text-decoration: none; color: white">Check it</a></button>
+        </div>
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Card title</p>
+            <p class="text-body">Here are the details of the card</p>
+          </div>
+          <button class="card-button""><a href="https://youtube.com" style="text-decoration: none; color: white"></a>Check it</button>
+        </div>
+      </div> 
+      </div>
+      <hr />
+    </main>
     <footer>
       <a href="./public/about.html">About Me</a>
       <a href="public/contact.html">Contact Me</a>
